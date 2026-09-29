@@ -1,0 +1,220 @@
+/* ===== geral ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #eef2f7;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #1a3c6e;
+    border-bottom: 3px solid #e67e22;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+h3 {
+    color: #1a3c6e;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+a {
+    color: #e67e22;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== topo ===== */
+header {
+    background: linear-gradient(135deg, #1a3c6e, #2c5aa0);
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+    color: #dce6f5;
+}
+
+/* ===== menu ===== */
+nav {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+nav a {
+    color: #1a3c6e;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #1a3c6e;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ===== conteúdo ===== */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+article {
+    background-color: #f7f9fc;
+    padding: 18px;
+    border-left: 4px solid #1a3c6e;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+article:last-child {
+    margin-bottom: 0;
+}
+
+/* botão dos links da página inicial */
+.botao {
+    display: inline-block;
+    background-color: #e67e22;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.botao:hover {
+    background-color: #cf6d1a;
+    text-decoration: none;
+}
+
+/* ===== caixa de curiosidade ===== */
+aside {
+    background-color: #fff8e1;
+    padding: 20px 25px;
+    margin: 0 auto 30px auto;
+    max-width: 900px;
+    border-left: 6px solid #e67e22;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+aside h3 {
+    color: #e67e22;
+    margin-top: 0;
+}
+
+/* ===== rodapé ===== */
+footer {
+    background-color: #1a3c6e;
+    color: #fff;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #dce6f5;
+}
+
+/* ===== celular ===== */
+@media (max-width: 768px) {
+
+    header {
+        padding: 35px 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    nav li {
+        display: block;
+        margin: 6px 0;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    main {
+        padding: 0 15px;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
